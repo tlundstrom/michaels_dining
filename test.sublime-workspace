@@ -1,0 +1,300 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"light",
+				"light-gray"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 1485,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 3053,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 9154,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 33.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/thomas/www/wpdev/wp-content/themes/Test/css/normalize.css",
+		"/home/thomas/www/wpdev/wp-content/themes/Test/index.php",
+		"/home/thomas/www/wpdev/wp-content/themes/Test/functions.php",
+		"/home/thomas/www/wpdev/wp-content/themes/Test/css/wp-styles.css",
+		"/home/thomas/www/wpdev/wp-content/themes/Test/style.css",
+		"/home/thomas/www/slant.css",
+		"/home/thomas/www/wpdev/wp-content/themes/Test/tes-content.xml",
+		"/home/thomas/www/wpdev/wp-includes/template-loader.php",
+		"/home/thomas/www/wpdev/wp-content/themes/Test/style2.css",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sass/style.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/Micheals-Dining/index.php",
+		"/home/thomas/text.xml",
+		"/home/thomas/www/wpdev/wp-includes/theme.php",
+		"/home/thomas/www/wpdev/wp-content/themes/Micheals-Dining/style.css",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sass/config.rb",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/header.php",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/index.php",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sidebar.php",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/footer.php",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sass/modules/_alignments.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sass/modules/_responsive.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sass/elements/_elements.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/style.css",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sass/.sassbuilder-config",
+		"/home/thomas/www/wpdev/wp-content/themes/twlp/sass/site/_site.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/library/scss/partials/_variables.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/library/scss/breakpoints/_base.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/style.css",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/library/scss/style.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/library/css/test.css",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/library/scss/test.scss",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/library/scss/.sassbuilder-config",
+		"/home/thomas/www/Portfolio/index.php",
+		"/home/thomas/www/wpdev/wp-content/themes/Bones/library/css/style.css.map",
+		"/usr/share/applications/sublime.desktop"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "header.php",
+					"settings":
+					{
+						"buffer_size": 1485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								740,
+								740
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 3053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2150,
+								2150
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 510.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 9154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2487,
+								2487
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 593.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

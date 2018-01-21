@@ -1,0 +1,664 @@
+/*
+Theme Name: Michaels Dining
+Author: Thomas Lundstrom
+Author URI: http://www.thomaswlundstrom.com
+Description: Theme for the conversion of the Michael's Seafood and Steakhouse website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: michaels-dining
+*/
+
+@charset "utf-8";
+/*CSS DOCUMENT-----------------------------------------------*/
+@font-face {
+    font-family: 'Copperplate Gothic Light';
+    src: url('css/font/path/copperplate_gothic_light.eot');
+    src: url('css/font/path/copperplate_gothic_light.eot?#iefix') format('embedded-opentype'),
+    url('css/font/path/copperplate_gothic_light.svg#Copperplate Gothic Light') format('svg'),
+    url('css/font/path/copperplate_gothic_light.woff') format('woff'),
+    url('css/font/path/copperplate_gothic_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+@font-face {
+    font-family: 'parisian';
+    src: url('css/font/path/Parisian.eot');
+    src: url('css/font/path/Parisian.eot?#iefix') format('embedded-opentype'),
+    url('css/font/path/Parisian.woff2') format('woff2'),
+    url('css/font/path/Parisian.woff') format('woff'),
+    url('css/font/path/Parisian.ttf') format('truetype'),
+    url('css/font/path/Parisian.svg#parisian_icgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {margin:0;padding:0;}
+
+a {color: #5e6a71; text-decoration: none;}
+a:hover {color: #981e32; }
+
+
+.admin-bar{
+    padding-top:32px;
+}
+
+/* ## RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+main, article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+figcaption {
+  line-height: 1em; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0em;
+  margin-bottom: 1em;
+}
+
+#site-title, #site-description{
+  margin-bottom: 0em;
+}
+.foot-wrapper p, .foot-wrapper h1, .foot-wrapper h2, .foot-wrapper h3, .foot-wrapper h4, .foot-wrapper h5, .foot-wrapper h6 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+header > h1.article-title{
+  display:none;
+}
+
+/* ## page */
+body{   background-image: url(data:image/png;base64,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);
+    background-color: #000;}
+.row{
+    min-height:420px;
+}
+
+#jacket{
+    overflow: hidden;
+    height: 100%;
+
+}
+
+#global-header{
+    height: 150px;
+    background-color: #000;
+}
+
+.header-extend, .footer-extend {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    background: #000;
+}
+.footer-extend {
+    height:120px;
+}
+
+#binder {
+    z-index:987;
+    width: 990px;
+    margin: 0 auto;
+    height: inherit;
+
+}
+
+main >section {
+    padding: 20px;
+    height: auto;
+}
+
+#footer-main{
+    position:absolute;
+    background-color: #000;
+    height: 120px;
+    width:inherit;
+    color: #fff;
+
+}
+.foot-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+#address{
+    float: right;
+}
+/*footer div#address{
+    float:left;
+}*/
+#telephone{
+    line-height: 2rem
+}
+#clear-fix{
+    clear:both;
+}
+
+/** FONTS **/
+body{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#site-title{
+    font-family: 'parisian';
+    color: #fff;
+    font-size: 6rem;
+}
+#site-description{
+    font-family: 'Marmelad';
+    color: #fff;
+    font-size: 2rem;
+}
+.row h1, .row hgroup h1, .row footer h1{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 2em;
+	font-weight:bold;
+}
+
+.row h2, .row hgroup h2, .row footer h2 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 2em;
+	font-weight:bold;
+}
+.row h3, .row hgroup h3, .row footer h3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.17em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 2em;
+	font-weight:bold;
+}
+.row h4, .row hgroup h4, .row footer h4 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.33em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 2em;
+	font-weight:bold;
+}
+.row h5, .row hgroup h5, .row footer h5 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: .83em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 2em;
+	font-weight:bold;
+}
+.row h6, .row hgroup h6, .row footer h6 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: .67em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 2em;
+	font-weight:bold;
+}
+.row p, .row hgroup,  footer > dl.categorized > dt{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 2em;
+}
+.row blockquote, .row hgroup blockquote, row footer blockquote {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+ol > li{
+	line-height: 23px;
+}
+
+nav > ul > li, footer {
+	font-family: 'Copperplate Gothic Light';
+}
+pre, code, samp, kbd {
+	font-family: "Courier New", Courier, monospace, sans-serif;
+	text-align: left;
+	color: #555;
+	}
+pre code {
+	line-height: 1.6em;
+	font-size: 11px;
+	}
+pre {
+	padding: 0.1em 0.5em 0.3em 0.7em;
+	border-left: 11px solid #ccc;
+	margin: 1.7em 0 1.7em 0.3em;
+	overflow: auto;
+	width: 93%;
+	}
+/* target IE7 and IE6 */
+*:first-child+html pre {
+	padding-bottom: 2em;
+	overflow-y: hidden;
+	overflow: visible;
+	overflow-x: auto; 
+	}
+* html pre { 
+	padding-bottom: 2em;
+	overflow: visible;
+	overflow-x: auto;
+	}
+.tablepress a, tablepress{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 2em;
+}
+#tablepress {
+
+	width:80%;
+	margin:0 auto;
+}
+/**** SIDENAV ****/
+.sideNav{
+    height: 100%;
+    background-color: #fff;
+    margin-left: 200px;
+}
+
+
+#sideNav,
+#sideNav * {
+  box-sizing: border-box; 
+}
+
+
+#sideNav {
+  font-size: 12px;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  z-index: 99164;
+  position: fixed;
+  bottom: 0; 
+  background-color: #000;
+
+}
+.sideNav-navigation{
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: bold;
+}
+
+
+
+#sideNav a {
+    color: #5e6a71; 
+}
+
+#sideNav a:hover {
+    color: #981e32; 
+}
+
+#glue {
+  margin-top: 0px;
+  position: relative;
+  width: 198px; 
+}
+
+#glue:before {
+  min-height: 100%;
+  position: absolute;
+  width: 198px;
+  visibility: visible; 
+}
+
+#sideNav nav,
+#sideNav footer {
+  margin-left: 1.75em;
+  margin-right: 1.75em; 
+}
+
+#sideNav header {
+  z-index: 99164; 
+}
+
+
+
+.logo-wrapper{
+    width:126px;
+    margin:0 auto;
+}
+
+.sideNav-footer{
+    background-color: #000;
+}
+.sideNav-footer > p{
+  text-align: center; 
+  color: #5e6a71;
+}
+.sideNav-footer > a{
+    padding:5px 14px;
+}
+.sideNav-footer hr{
+    margin:7px 0;
+}
+ul.pe-social{
+    padding-bottom: 5px;
+}
+
+/* ## FOOTER */
+#sideNav footer {
+  position: fixed;
+  bottom: 0px;
+  padding: .75em 0 0.75em 0;
+  width: 156px; 
+  height:160px;
+}
+
+html.lt-ie9 #sideNav footer {
+  position: relative; }
+
+#sideNav footer nav {
+  margin: 0; }
+
+.sideNav-footer nav ul li {
+  border-top: none !important;
+  text-align: center; }
+
+  #designer{
+    float: right;
+    padding-right: 15px;
+  }
+
+  /***** Mobile Menu Defaults *****/
+
+  .mobile-menu-button{
+    display: none;
+    float: left;
+    margin:33px 5px 33px 5px;
+    color:#5e6a71;
+    /*height: 100%;*/
+    cursor: pointer;
+
+  }
+  .mobile-menu-button:hover{
+    color: white;
+  }
+
+
+
+
+/***** RESPONSIVE *****/
+
+
+@media only screen and (min-device-width: 990px) and (min-width: 1188px){
+    #binder{
+      width: 1188px;
+    }
+    .row{
+        
+    }
+    .sideNav{
+        width: 73%;
+    }
+    #footer-main{
+        width: 990px;
+    }
+}
+@media screen and (max-width: 1188px){
+    #footer-main{
+        width: 790px;
+    }
+}
+
+@media screen and (max-width: 989px){
+    html{
+        font-size: 85%;
+    }
+    #binder {
+        width: 100%
+    }
+    .sideNav{
+        margin: 0px;
+        height: 100%;
+    }
+    #sideNav, .header-extend, .footer-extend{
+        display: none;
+    }
+    #sideNav{
+      position: absolute;
+    }
+
+    .mobile-menu-button{
+        display: inline-block;
+    }
+
+    #global-header{
+        height: 120px;
+        width:100%;
+    }
+    #footer-main{width: 100%}
+}
+@media only screen and (max-width: 782px){
+  .admin-bar{margin-top: 266px;}
+@media only screen and (max-width: 791px){
+    html{
+        font-size: 80%;
+    }
+    .sideNav-navigation{
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 693px){
+
+
+    #binder.fluid, #binder.hybrid {
+    width: 100%;
+    }
+    .sideNav{
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    #global-header{
+        height: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    #footer-main{
+        text-align: center;
+        height:200px;
+    }
+    .foot-wrapper{
+        height: inherit;
+    }
+    #address{
+        text-align: left;
+        float: none;
+        display: inline-block;
+
+    }
+    footer div#hours{
+        padding-top: 20px;
+        width: 229px;
+        text-align: left;
+        float: inherit;
+        display: inline-block;
+    }
+    #link-break{
+        display:inherit;
+	clear:both;
+    }
+    .wp-image-7, .link-image{
+        width:325px;
+    }
+}
+
+#CDSWIDCOE{
+   margin: 0 !important;
+}
+
+img.ack-image{
+  height:66%;
+  width:66%;
+}
